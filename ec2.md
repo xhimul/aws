@@ -40,6 +40,6 @@ using PuTTY > Convert your private key using PuTTYgen\
 ## Adding or replacing a key pair for your instance
 \
 ## Create new user with sudo privilege
-* adduser laravel
-* Enter password and other information
-* usermod -aG sudo laravel
+- 'adduser laravel'
+- Enter password and other information
+- 'usermod -aG sudo laravel'
