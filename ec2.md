@@ -32,15 +32,18 @@ EC2 > Network & Security >Elastic IP addresses > Allocate Elastic IP address > A
 Associate this Elastic IP address > Instance\
 \
 \
-\
 Connect to your instance:\
 using PuTTY > Convert your private key using PuTTYgen\
 \
-\
-\
-\
-\
+
 \
 Locating the public key on an instance\
 \
 Adding or replacing a key pair for your instance
+\
+\
+\
+# Create new user with sudo privilege
+* adduser laravel
+* Enter password and other information
+* usermod -aG sudo laravel
