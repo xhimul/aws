@@ -45,3 +45,7 @@ using PuTTY > Convert your private key using PuTTYgen\
 - `adduser laravel`
 - Enter password and other information
 - `usermod -aG sudo laravel`
+
+## Enable Password from Server
+- Find and set `PasswordAuthentication yes`
+- Reload the SSH service `sudo systemctl reload sshd`
