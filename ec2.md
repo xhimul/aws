@@ -18,7 +18,7 @@
 - Enable termination protection
 
 #### Step 4: Add Storage
-- Delete on Termination: - [x]
+- [x] Delete on Termination
 
 #### Step 5: Add Tags
 
