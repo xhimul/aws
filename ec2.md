@@ -2,7 +2,7 @@
 - VPC Create
 - Subnet Create
 - Internet Gateway > Create internet gateway > Attach to a VPC
-- Router Tables > Routes >
+- Router Tables > Routes > Edit Routes > Add Route > Destination: 0.0.0.0/0, Target: igw
 
 
 ## EC2 Part:
@@ -10,8 +10,7 @@
 - Launch Instance > Choose Image >
 
 #### Step 2: Choose Instance Type
-- Choose Instance Type > Edit Routes > Add Route >
-- Destination: 0.0.0.0/0, Target: igw
+- Choose Instance Type
 
 #### Step 3: Configure Instance
 - Configure Instance Details:
