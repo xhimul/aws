@@ -1,9 +1,8 @@
 ## VPC Part:
 - VPC Create
 - Subnet Create
-- Internet Gateway > Create internet gateway > Attach to a VPC\
-- Router Tables > Routes > \
-\
+- Internet Gateway > Create internet gateway > Attach to a VPC
+- Router Tables > Routes >
 
 
 ## EC2 Part:
@@ -28,8 +27,7 @@
 
 #### Step 7: Review
 - Select an existing key pair or create a new key pair > Download Key Pair
-
-
+- Click on Launch Instace
 - EC2 > Network & Security >Elastic IP addresses > Allocate Elastic IP address > Allocated
 - Associate this Elastic IP address > Instance
 
