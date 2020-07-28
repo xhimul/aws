@@ -34,9 +34,6 @@
 - using PuTTY > Convert your private key using PuTTYgen
 
 
-## Add swap memory
-* https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
-
 ## Locating the public key on an instance
 
 
@@ -51,3 +48,6 @@
 ## Enable Password from Server
 - Find and set `PasswordAuthentication yes`
 - Reload the SSH service `sudo systemctl reload sshd`
+
+## Add swap memory
+* https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
