@@ -1,4 +1,4 @@
-# Install Linux, Nginx, MySQL, PHP
+## Install Linux, Nginx, MySQL, PHP
 ## Apache2
 - $ `sudo apt update` enter root password
 - $ `sudo apt install apache2`
@@ -30,7 +30,7 @@
 ## LAMP
 - https://www.tecmint.com/install-lamp-with-phpmyadmin-in-ubuntu-20-04/
 
-## Creating a New Database
+## Create/Drop/Show Database
 root@TecMint:~$ `sudo mysql -u root -p`\
 MariaDB [(none)]> `CREATE DATABASE BookstoreDB;`
 
