@@ -57,16 +57,16 @@ MariaDB [BookstoreDB]> `FLUSH PRIVILEGES;`
 
 
 ###### Login with authentication key:
-- `sudo ssh -i "bKash_B2C_Key.pem" ubuntu@XX.XX.XX.XX`
+`sudo ssh -i "bKash_B2C_Key.pem" ubuntu@XX.XX.XX.XX`
 
 ##### File send to remote server:
-- `sudo scp -i bKash_B2C_Key.pem -r bkash2/ ubuntu@XX.XX.XX.XX:/home/ubuntu/`
+`sudo scp -i bKash_B2C_Key.pem -r bkash2/ ubuntu@XX.XX.XX.XX:/home/ubuntu/`
 
 ##### File move one to another directory
-- `sudo mv /home/ubuntu/bkash2/ /var/www/html/ -ifv`
+`sudo mv /home/ubuntu/bkash2/ /var/www/html/ -ifv`
 
 ##### File Remove:
-- `sudo rm /filename -rfv`
+`sudo rm /filename -rfv`
 
 
 ###### Show subdirectory usage memory with summary:
@@ -100,7 +100,7 @@ Output: `194G    /var/spool/asterisk/monitor/2020/`
 
 
 ##### File Download from remote (Windows Subsystem Ubuntu)
-- `shimul@TechSolutions:~$ scp root@27.147.XXX.XXX:/cronttest.sh "/mnt/d/vicidial/27.147.XXX.XXX_audio_backup/2020"`
+`shimul@TechSolutions:~$ scp root@27.147.XXX.XXX:/cronttest.sh "/mnt/d/vicidial/27.147.XXX.XXX_audio_backup/2020"`
 
 
 
