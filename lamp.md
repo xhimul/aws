@@ -56,34 +56,77 @@ MySQL Database Administration Part – 2
 MySQL Performance Tunning and Optimization – Part 3
 
 
-sudo ssh -i "bKash_B2C_Key.pem" ubuntu@XX.XX.XX.XX
-sudo scp -i bKash_B2C_Key.pem -r bkash2/ ubuntu@XX.XX.XX.XX:/home/ubuntu/
-sudo mv /home/ubuntu/bkash2/ /var/www/html/ -ifv
-sudo rm /filename -rfv
+###### Login with authentication key:
+- `sudo ssh -i "bKash_B2C_Key.pem" ubuntu@XX.XX.XX.XX`
+
+##### File send to remote server:
+- `sudo scp -i bKash_B2C_Key.pem -r bkash2/ ubuntu@XX.XX.XX.XX:/home/ubuntu/`
+
+##### File move one to another directory
+- `sudo mv /home/ubuntu/bkash2/ /var/www/html/ -ifv`
+
+##### File Remove:
+- `sudo rm /filename -rfv`
+
+
+###### Show subdirectory usage memory with summary:
+`foodpanda:~ # du /var/spool/asterisk/monitorDONE/ -hc` [-h for human readable, -c for total]
+###### Output:
+`4.0K    /var/spool/asterisk/monitorDONE/OGG`\
+`4.0K    /var/spool/asterisk/monitorDONE/GSM`\
+`4.0K    /var/spool/asterisk/monitorDONE/GSW`\
+`220G    /var/spool/asterisk/monitorDONE/ORIG`\
+`4.0K    /var/spool/asterisk/monitorDONE/GPG`\
+`4.0K    /var/spool/asterisk/monitorDONE/FTP2`\
+`4.0K    /var/spool/asterisk/monitorDONE/FTP`\
+`146G    /var/spool/asterisk/monitorDONE/MP3`\
+`366G    /var/spool/asterisk/monitorDONE/`\
+`366G    total`
+
+###### Show directory usage memory summary:
+`foodpanda:~ # df -h /var/spool/asterisk/monitorDONE/`
+###### Output:
+`Filesystem      Size  Used Avail Use% Mounted on`\
+`/dev/sda3       476G  393G   83G  83% /`
+
+
+###### Remove all in mentioned directory:
+`foodpanda:/var/spool/asterisk/monitorDONE/ORIG # rm -rfv 202007*`
+
+
+### Show directory usage memory summary
+Command: `[root@foodpandaIPPBX ~]# du /var/spool/asterisk/monitor/2020/ -sh` [-s for summary , -h for human readable]\
+Output: `194G    /var/spool/asterisk/monitor/2020/`
+
+
+##### File Download from remote (Windows Subsystem Ubuntu)
+- `shimul@TechSolutions:~$ scp root@27.147.XXX.XXX:/cronttest.sh "/mnt/d/vicidial/27.147.XXX.XXX_audio_backup/2020"`
 
 
 
 
 
 
-
+##### Set Time Zone:
 sudo timedatectl set-timezone Asia/Dhaka
 
+##### Install & Add Cron:
+sudo apt install cron\
+sudo systemctl enable cron\
+sudo vim /var/spool/cron/crontab/ubuntu\
+*/1 * * * * sleep 10; wget -q -O - https://example.com >/dev/null 2>&1\
+*/1 * * * * sleep 20; wget -q -O - https://example.com >/dev/null 2>&\
+*/1 * * * * sleep 30; wget -q -O - https://example.com >/dev/null 2>&1\
+*/1 * * * * sleep 40; wget -q -O - https://example.com >/dev/null 2>&1\
+*/1 * * * * sleep 50; wget -q -O - https://example.com >/dev/null 2>&1\
 
-sudo apt install cron
-sudo systemctl enable cron
-sudo vim /var/spool/cron/crontab/ubuntu
-*/1 * * * * sleep 10; wget -q -O - https://example.com >/dev/null 2>&1
-*/1 * * * * sleep 20; wget -q -O - https://example.com >/dev/null 2>&
-*/1 * * * * sleep 30; wget -q -O - https://example.com >/dev/null 2>&1
-*/1 * * * * sleep 40; wget -q -O - https://example.com >/dev/null 2>&1
-*/1 * * * * sleep 50; wget -q -O - https://example.com >/dev/null 2>&1
 
+##### See Cron Log:
+grep CRON /var/log/syslog\
 
-grep CRON /var/log/syslog
-
-#!/usr/bin/env bash
-wget https://https://example.com
-wget https://https://example.com
-saved at /var/www/html/cron.sh
-chmod +x /var/www/html/cron.sh
+##### Bash for cron:
+#!/usr/bin/env bash\
+wget https://https://example.com\
+wget https://https://example.com\
+saved at /var/www/html/cron.sh\
+chmod +x /var/www/html/cron.sh\
