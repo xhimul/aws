@@ -44,16 +44,16 @@ MariaDB [BookstoreDB]> `FLUSH PRIVILEGES;`
 
 
 -----------------------------
-Part 1: Learn MySQL / MariaDB for Beginners
-https://www.tecmint.com/learn-mysql-mariadb-for-beginners/
+##### Part 1: Learn MySQL / MariaDB for Beginners
+- https://www.tecmint.com/learn-mysql-mariadb-for-beginners/
 
-Part 2: Learn How to Use Several Functions of MySQL and MariaDB
-https://www.tecmint.com/learn-mysql-mariadb-advance-functions-sql-queries/
+##### Part 2: Learn How to Use Several Functions of MySQL and MariaDB
+- https://www.tecmint.com/learn-mysql-mariadb-advance-functions-sql-queries/
 
 
-MySQL Database Administration Part – 1
-MySQL Database Administration Part – 2
-MySQL Performance Tunning and Optimization – Part 3
+##### MySQL Database Administration Part – 1
+##### MySQL Database Administration Part – 2
+##### MySQL Performance Tunning and Optimization – Part 3
 
 
 ###### Login with authentication key:
@@ -101,9 +101,6 @@ Output: `194G    /var/spool/asterisk/monitor/2020/`
 
 ##### File Download from remote (Windows Subsystem Ubuntu)
 - `shimul@TechSolutions:~$ scp root@27.147.XXX.XXX:/cronttest.sh "/mnt/d/vicidial/27.147.XXX.XXX_audio_backup/2020"`
-
-
-
 
 
 
