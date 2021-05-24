@@ -28,6 +28,27 @@
 
 
 ## LAMP
+###### Installing PHP in Ubuntu:
+- $ sudo apt install php libapache2-mod-php php-mysql
+- $ sudo apt-cache search php | grep php-		#show all php packages
+- $ sudo apt install php-redis php-zip
+- $ sudo systemctl restart apache2
+- $ sudo vi /var/www/html/info.php
+- `<?php
+        phpinfo();
+?>`
+- http://YOUR_SERVER_IP/info.php
+
+
+###### phpMyAdmin Installation:
+- $ sudo apt install phpmyadmin
+- $ sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+- $ sudo a2enconf phpmyadmin.conf
+- $ sudo systemctl reload apache2.service
+- http://SERVER_IP/phpmyadmin
+
+
+
 - https://www.tecmint.com/install-lamp-with-phpmyadmin-in-ubuntu-20-04/
 
 ## Create/Drop/Show Database
